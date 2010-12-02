@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/HomeScreen" android:background="#FFFFAA"><TextView android:layout_height="wrap_content" android:id="@+id/QuoteText" android:layout_centerHorizontal="true" android:layout_marginTop="40dip" android:text="Chuck Norris was bitten by snake. 3 days later the snake died a painful death." android:layout_width="250dip"></TextView>
-<TextView android:layout_below="@id/QuoteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/AuthorText" android:layout_marginTop="20dip" android:layout_alignParentRight="true" android:layout_marginRight="50dip" android:text="Anonymous"></TextView>
-<RelativeLayout android:id="@+id/ButtonView" android:background="#BBB" android:layout_width="fill_parent" android:layout_marginTop="30dip" android:layout_height="wrap_content" android:layout_above="@+id/AdsView" android:layout_marginBottom="50dip"><Button android:layout_width="wrap_content" android:id="@+id/PreviousButton" android:text="Prev" android:layout_height="wrap_content"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send" android:id="@+id/SendButton" android:layout_centerHorizontal="true"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/NextButton" android:text="Next" android:layout_alignParentRight="true"></Button>
-</RelativeLayout>
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/HomeScreen" android:background="#FFFFAA">
+	<TextView android:layout_height="wrap_content" android:id="@+id/QuoteText"
+		android:layout_centerHorizontal="true" android:layout_marginTop="40dip"
+		android:text="Chuck Norris was bitten by snake. 3 days later the snake died a painful death."
+		android:layout_width="250dip"></TextView>
+	<TextView android:layout_below="@id/QuoteText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/AuthorText" android:layout_marginTop="20dip"
+		android:layout_alignParentRight="true" android:layout_marginRight="50dip"
+		android:text="Anonymous"></TextView>
+	<RelativeLayout android:id="@+id/ButtonView"
+		android:background="#BBB" android:layout_width="fill_parent"
+		android:layout_marginTop="30dip" android:layout_height="wrap_content"
+		android:layout_above="@+id/AdsView" android:layout_marginBottom="50dip">
+		<Button android:layout_width="wrap_content" android:id="@+id/PreviousButton"
+			android:text="Prev" android:layout_height="wrap_content"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Send" android:id="@+id/SendButton"
+			android:layout_centerHorizontal="true" android:onClick="sendQuote"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/NextButton"
+			android:text="Next" android:layout_alignParentRight="true"></Button>
+	</RelativeLayout>
 
-<RelativeLayout android:layout_alignParentBottom="true" android:layout_height="50dip" android:background="#000" android:layout_width="fill_parent" android:id="@+id/AdsView"></RelativeLayout>
+	<RelativeLayout android:layout_alignParentBottom="true"
+		android:layout_height="50dip" android:background="#000"
+		android:layout_width="fill_parent" android:id="@+id/AdsView"></RelativeLayout>
 </RelativeLayout>
